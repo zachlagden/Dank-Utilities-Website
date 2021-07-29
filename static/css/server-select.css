@@ -1,0 +1,101 @@
+/*                                 IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/*                                 ALL/BODY */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(/static?file=images/serverselect-bg.svg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/*                                 TEXT/IMAGES */
+
+.name {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pfp {
+  margin-top: 2%;
+  height: 70%;
+  border-radius: 100px;
+}
+
+
+/*                                 ELEMENTS/DIVS */
+
+.guild {
+  max-height: 100px;
+  margin: auto;
+  width: 40vw;
+  padding: 10px;
+  overflow:auto;
+}
+
+.guildindentity {
+  float: left;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.guildimage {
+  height: 50px;
+  border-radius: 500px;
+}
+
+.guildname {
+  display: inline;
+  margin-left: 20px;
+}
+
+/*                                 BUTTONS */
+
+.dashbutton {
+  float: right;
+  background-color: #57F287;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashbutton:hover {
+  background-color: #51ad6e;
+}
+
+.setupbutton {
+  float: right;
+  background-color: #5865F2;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.setupbutton:hover {
+  background-color: #4953b8;
+}

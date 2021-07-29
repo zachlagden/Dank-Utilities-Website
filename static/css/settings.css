@@ -1,0 +1,42 @@
+/*                                 IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/*                                 ALL/BODY */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(/static?file=images/settings-bg.svg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/*                                 TEXT/IMAGES */
+
+.title {
+  font-weight: 700;
+  font-size: 3.2vw;
+}
+
+.fa-arrow-left {
+  transition: 0.5s;
+}
+
+/*                                 ELEMENTS/DIVS */
+
+.top {
+  padding-top: 10vh;
+}
+
+.settingsli {
+  cursor: pointer;
+  float: left;
+  margin-left: 20vw;
+}
+
+/*                                 BUTTONS */

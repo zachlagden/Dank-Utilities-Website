@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/static?file=images/icon.png">
+  <link rel="stylesheet" href="/static?file=css/server-select.css">
+  <link rel="stylesheet" href="/static?file=css/website-wide.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous"></script>
+  <script src="/static?file=js/website-wide.js"></script>
+  <script src="/static?file=js/serverselect.js"></script>
+  <title>Dank Utilities - Server Select</title>
+</head>
+<body align="center">
+
+  <ul>
+    <li><a href="/logout">Signout</a></li>
+    <li><a href="https://discord.gg/MWkscDDw6G">Support</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/settings"><i class="fas fa-cog"></i></a></li>
+  </ul>
+
+  <div id="guilds" class="guilds">
+    {% for guild in guilds %}
+    <div class="guild">
+      <div class="guildindentity">
+        <img class="guildimage" src={{ guild["pfp"] }} alt="">
+        <p class="guildname">{{ guild["data"]["name"] }}</p>
+      </div>
+      {% if guild["am_i_in"] == true %}
+      <a href="/dashboard/{{ guild["id"] }}" class="dashbutton">Go to dashboard</a>
+      {% else %}
+      <a onclick="addtoguild('https://discord.com/oauth2/authorize?client_id=831647690106470420&permissions=8&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Faddreturn&scope=applications.commands%20bot&guild_id={{ guild["""id"""] }}')" class="setupbutton">Set up</a>
+      {% endif %}
+    </div><br>
+    {% endfor %}
+  </div>
+
+  <div style="display: none;" class="cookie-message" id="cookie">
+    <img src="/static?file=images/cookie.png">
+    <span>We use cookies to provide you the best possible experience. But don't panic - we won't share any of your data. You can find more informations about our cookies <a href="/help/cookies">here</a>.</span>
+    <a class="close" onclick="close_cookie_message()"><i class="fa fa-times"></i></a>
+  </div>
+</body>
+</html>

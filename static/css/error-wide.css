@@ -1,0 +1,56 @@
+/*                                 IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/*                                 ALL/BODY */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(/static?file=images/error-bg.svg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*                                 TEXT/IMAGES/DIVS */
+
+.content {
+  padding-top: 10vh;
+}
+
+.errortitle {
+  color: black;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.errortext {
+  margin-top: 10vh;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/*                                 BUTTONS */
+
+.backbutton {
+  background-color: #5865F2;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.backbutton:hover {
+  background-color: #4953b8;
+}

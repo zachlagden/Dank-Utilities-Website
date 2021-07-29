@@ -1,0 +1,174 @@
+/*                                 IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*                                 ALL/BODY */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+/*                                 TEXT/IMAGES */
+
+.introhead {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 2vh;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-top: 29vh;
+  text-transform: uppercase;
+}
+
+.nametitle {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 7vh;
+  margin: 0;
+}
+
+.introtext {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2.3vh;
+  margin: 0;
+}
+
+.featurehead {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 4vh;
+  margin: 0;
+  padding-top: 15vh;
+}
+
+.featureboxtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3vh;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.featureboxsubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2vh;
+  margin: 0;
+}
+
+.invitehead {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 4vh;
+  margin: 0;
+  padding-top: 10vh;
+}
+
+/*                                 WAVES/SECTIONS */
+
+.homeul {
+  background-color: #00ffff;
+}
+
+.intro {
+  padding-left: 7vw;
+}
+
+.lower {
+  text-align: center;
+}
+
+.content {
+  margin: 0;
+}
+
+.top {
+  background-color: #00ffff;
+  height: 58vh;
+  text-align: left;
+}
+
+.featurebox {
+  width: 400px;
+  height: 180px;
+  margin-right: 17px;
+  margin-bottom: 17px;
+  display: inline-grid;
+  padding: 80px;
+  border-radius: 5px;
+  color: white;
+}
+
+#features {
+  margin: auto;
+}
+
+.fb1 {
+  background: -webkit-linear-gradient(bottom right, rgba(0,124,116,1) 0%, rgba(0,255,255,1) 100%);
+  background: -o-linear-gradient(bottom right, rgba(0,124,116,1) 0%, rgba(0,255,255,1) 100%);
+  background: linear-gradient(to bottom right, rgba(0,124,116,1) 0%, rgba(0,255,255,1) 100%);
+}
+
+.fb2 {
+  background: -webkit-linear-gradient(bottom right, rgba(255,164,242,1) 0%, rgba(255,0,249,1) 100%);
+  background: -o-linear-gradient(bottom right, rgba(255,164,242,1) 0%, rgba(255,0,249,1) 100%);
+  background: linear-gradient(to bottom right, rgba(255,164,242,1) 0%, rgba(255,0,249,1) 100%);
+}
+
+.fb3 {
+  background: -webkit-linear-gradient(bottom right, rgba(255,0,219,1) 0%, rgba(228,255,0,1) 100%);
+  background: -o-linear-gradient(bottom right, rgba(255,0,219,1) 0%, rgba(228,255,0,1) 100%);
+  background: linear-gradient(to bottom right, rgba(255,0,219,1) 0%, rgba(228,255,0,1) 100%);
+}
+
+/*                                 BUTTONS */
+
+.introbutton {
+  background-color: #3c3c54;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vh;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.introbutton:hover {
+  background-color: #2e2e40;
+}
+
+.invitebutton {
+  background: -webkit-linear-gradient(bottom right, rgba(255,0,219,1) 0%, rgba(228,255,0,1) 100%);
+  background: -o-linear-gradient(bottom right, rgba(255,0,219,1) 0%, rgba(228,255,0,1) 100%);
+  background: linear-gradient(to bottom right, rgba(255,0,219,1) 0%, rgba(228,255,0,1) 100%);
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vh;
+  margin: 4px 2px;
+  margin-bottom: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.invitebutton:hover {
+  background-color: #2e2e40;
+}
